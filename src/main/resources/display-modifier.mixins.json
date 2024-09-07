@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "itserthere.displaymodifier.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+      "DisplayMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

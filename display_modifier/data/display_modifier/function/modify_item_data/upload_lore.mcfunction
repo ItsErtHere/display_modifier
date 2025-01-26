@@ -1,0 +1,2 @@
+execute as @n[type=item_frame] at @p run data modify entity @s Item.components."minecraft:custom_data" set from entity @p
+execute as @n[type=item_frame] at @p run data modify entity @s Item.components."minecraft:lore" set from entity @p

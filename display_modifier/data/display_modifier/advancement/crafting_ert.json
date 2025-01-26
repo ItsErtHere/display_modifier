@@ -1,0 +1,28 @@
+{
+  "parent": "display_modifier:root",
+  "criteria": {
+    "craft_book": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "predicates": {
+              "minecraft:written_book_content": {"title": "Display Creator"}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "craft_book"
+    ]
+  ],
+  "rewards": {
+    "function": "display_modifier:give_books/give_book"
+  }
+}

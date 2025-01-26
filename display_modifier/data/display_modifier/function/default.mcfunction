@@ -1,0 +1,1 @@
+execute at @a[tag=displ_summoned] as @e[type=item_display] if score @s player_id = @p player_id run data modify entity @e[type=item_display,name="playername",limit=1] transformation set value {scale:[1,1,1],translation:[0,0,0],left_rotation:[0,0,0,1],right_rotation:[0,0,0,1]}

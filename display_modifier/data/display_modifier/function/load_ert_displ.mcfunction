@@ -1,0 +1,14 @@
+scoreboard objectives add display_setting_type trigger
+scoreboard objectives add display_setting_axis trigger
+scoreboard objectives add display_glow_red trigger
+scoreboard objectives add display_glow_green trigger
+scoreboard objectives add display_glow_blue trigger
+scoreboard objectives add display_passengers trigger
+scoreboard objectives add display_loc_x trigger
+scoreboard objectives add display_loc_y trigger
+scoreboard objectives add display_loc_z trigger
+scoreboard objectives add temp_obj trigger
+scoreboard objectives add value_adder trigger
+scoreboard objectives add player_id dummy
+scoreboard objectives add used.written_book used:written_book
+scoreboard objectives add entityCount dummy

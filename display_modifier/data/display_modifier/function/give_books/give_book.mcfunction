@@ -1,0 +1,1 @@
+execute as @p run tag @s add as_craft

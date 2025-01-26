@@ -1,0 +1,21 @@
+{
+	"function": "copy_custom_data",
+	"source": "this",
+	"ops": [
+		{
+			"op": "replace",
+			"source": "weapon.components.custom_data.interaction_location",
+			"target": "weapon.components.custom_data.interaction_location"
+		},
+		{
+			"op": "replace",
+			"source": "weapon.components.custom_data.other",
+			"target": "weapon.components.custom_data.action"
+		},
+		{
+			"op": "replace",
+			"source": "weapon.components.custom_data.action",
+			"target": "weapon.components.custom_data.other"
+		}
+	]
+}

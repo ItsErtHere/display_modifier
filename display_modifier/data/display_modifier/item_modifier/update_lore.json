@@ -1,0 +1,338 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    {
+      "translate": "Translation: %s %s, %s %s, %s %s",
+      "with": [
+        {
+          "nbt": "rel_dir.trans_x",
+          "storage": "display_modifier:data",
+          "color": "red"
+        },
+        {
+          "nbt": "transformation.translation[0]",
+          "storage": "display_modifier:data",
+          "color": "red"
+        },
+        {
+          "nbt": "rel_dir.trans_y",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "transformation.translation[1]",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "rel_dir.trans_z",
+          "storage": "display_modifier:data",
+          "color": "blue"
+        },
+        {
+          "nbt": "transformation.translation[2]",
+          "storage": "display_modifier:data",
+          "color": "blue"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+      "translate": "Scale: %s %s, %s %s, %s %s",
+      "with": [
+        {
+          "nbt": "rel_dir.scale_x",
+          "storage": "display_modifier:data",
+          "color": "red"
+        },
+        {
+          "nbt": "transformation.scale[0]",
+          "storage": "display_modifier:data",
+          "color": "red"
+        },
+        {
+          "nbt": "rel_dir.scale_y",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "transformation.scale[1]",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "rel_dir.scale_z",
+          "storage": "display_modifier:data",
+          "color": "blue"
+        },
+        {
+          "nbt": "transformation.scale[2]",
+          "storage": "display_modifier:data",
+          "color": "blue"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+      "translate": "Left Rotation: %s %s, %s %s, %s %s, %s %s",
+      "with": [
+        {
+          "nbt": "rel_dir.l_rot_x",
+          "storage": "display_modifier:data",
+          "color": "red"
+        },
+        {
+          "nbt": "transformation.left_rotation[0]",
+          "storage": "display_modifier:data",
+          "color": "red"
+        },
+        {
+          "nbt": "rel_dir.l_rot_y",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "transformation.left_rotation[1]",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "rel_dir.l_rot_z",
+          "storage": "display_modifier:data",
+          "color": "blue"
+        },
+        {
+          "nbt": "transformation.left_rotation[2]",
+          "storage": "display_modifier:data",
+          "color": "blue"
+        },
+        {
+          "nbt": "rel_dir.l_rot_w",
+          "storage": "display_modifier:data",
+          "color": "yellow"
+        },
+        {
+          "nbt": "transformation.left_rotation[3]",
+          "storage": "display_modifier:data",
+          "color": "yellow"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+      "translate": "Right Rotation: %s %s, %s %s, %s %s, %s %s",
+      "with": [
+        {
+          "nbt": "rel_dir.r_rot_x",
+          "storage": "display_modifier:data",
+          "color": "red"
+        },
+        {
+          "nbt": "transformation.right_rotation[0]",
+          "storage": "display_modifier:data",
+          "color": "red"
+        },
+        {
+          "nbt": "rel_dir.r_rot_y",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "transformation.right_rotation[1]",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "rel_dir.r_rot_z",
+          "storage": "display_modifier:data",
+          "color": "blue"
+        },
+        {
+          "nbt": "transformation.right_rotation[2]",
+          "storage": "display_modifier:data",
+          "color": "blue"
+        },
+        {
+          "nbt": "rel_dir.r_rot_w",
+          "storage": "display_modifier:data",
+          "color": "yellow"
+        },
+        {
+          "nbt": "transformation.right_rotation[3]",
+          "storage": "display_modifier:data",
+          "color": "yellow"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+      "translate": "Glow Color: %s %s, %s %s, %s %s",
+      "with": [
+        {
+          "nbt": "rel_dir.glow_r",
+          "storage": "display_modifier:data",
+          "color": "red"
+        },
+        {
+          "nbt": "glow_color[0]",
+          "storage": "display_modifier:data",
+          "color": "red"
+        },
+        {
+          "nbt": "rel_dir.glow_g",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "glow_color[1]",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "rel_dir.glow_b",
+          "storage": "display_modifier:data",
+          "color": "blue"
+        },
+        {
+          "nbt": "glow_color[2]",
+          "storage": "display_modifier:data",
+          "color": "blue"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+      "translate": "Shadows: %s %s, %s %s, %s %s, %s %s",
+      "with": [
+        {
+          "nbt": "rel_dir.shadow_r",
+          "storage": "display_modifier:data",
+          "color": "red"
+        },
+        {
+          "nbt": "shadow_radius",
+          "storage": "display_modifier:data",
+          "color": "red"
+        },
+        {
+          "nbt": "rel_dir.shadow_s",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "shadow_strength",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "rel_dir.bright_b",
+          "storage": "display_modifier:data",
+          "color": "blue"
+        },
+        {
+          "nbt": "block_brightness",
+          "storage": "display_modifier:data",
+          "color": "blue"
+        },
+        {
+          "nbt": "rel_dir.bright_s",
+          "storage": "display_modifier:data",
+          "color": "yellow"
+        },
+        {
+          "nbt": "sky_brightness",
+          "storage": "display_modifier:data",
+          "color": "yellow"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+      "translate": "Interpolation: %s %s, %s %s, %s %s",
+      "with": [
+        {
+          "nbt": "rel_dir.interp_s",
+          "storage": "display_modifier:data",
+          "color": "red"
+        },
+        {
+          "nbt": "interpolation_start",
+          "storage": "display_modifier:data",
+          "color": "red"
+        },
+        {
+          "nbt": "rel_dir.interp_d",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "interpolation_duration",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "rel_dir.telep_d",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "teleport_duration",
+          "storage": "display_modifier:data",
+          "color": "blue"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+      "translate": "Location: %s %s, %s %s, %s %s, %s %s",
+      "with": [
+        {
+          "nbt": "rel_dir.pos_x",
+          "storage": "display_modifier:data",
+          "color": "red"
+        },
+        {
+          "nbt": "interaction_location.x",
+          "storage": "display_modifier:data",
+          "color": "red"
+        },
+        {
+          "nbt": "rel_dir.pos_y",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "interaction_location.y",
+          "storage": "display_modifier:data",
+          "color": "green"
+        },
+        {
+          "nbt": "rel_dir.pos_z",
+          "storage": "display_modifier:data",
+          "color": "blue"
+        },
+        {
+          "nbt": "interaction_location.z",
+          "storage": "display_modifier:data",
+          "color": "blue"
+        },
+        {
+          "nbt": "interaction_location.r",
+          "storage": "display_modifier:data",
+          "color": "yellow"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    }
+  ],
+  "mode": "replace_all"
+}

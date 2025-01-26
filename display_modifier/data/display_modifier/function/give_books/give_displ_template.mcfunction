@@ -1,0 +1,1 @@
+loot give @s loot display_modifier:modif_book

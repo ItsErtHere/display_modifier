@@ -1,0 +1,20 @@
+#Send Location
+execute if entity @n[type=player,nbt={SelectedItem:{components:{"minecraft:custom_data":{rel_dir:{pos_x:"~"}}}}}] store result storage display_modifier:data x0 float 0.0001 run function display_modifier:operations/add_nums {"path1":"Pos[0]","path2":"SelectedItem.components.minecraft:custom_data.interaction_location.x"}
+execute if entity @n[type=player,nbt={SelectedItem:{components:{"minecraft:custom_data":{rel_dir:{pos_y:"~"}}}}}] store result storage display_modifier:data y0 float 0.0001 run function display_modifier:operations/add_nums {"path1":"Pos[1]","path2":"SelectedItem.components.minecraft:custom_data.interaction_location.y"}
+execute if entity @n[type=player,nbt={SelectedItem:{components:{"minecraft:custom_data":{rel_dir:{pos_z:"~"}}}}}] store result storage display_modifier:data z0 float 0.0001 run function display_modifier:operations/add_nums {"path1":"Pos[2]","path2":"SelectedItem.components.minecraft:custom_data.interaction_location.z"}
+execute if entity @n[type=item_frame,nbt={Item:{components:{"minecraft:custom_data":{rel_dir:{pos_x:"~"}}}}}] store result storage display_modifier:data x0 float 0.0001 run function display_modifier:operations/add_nums {"path1":"Pos[0]","path2":"Item.components.minecraft:custom_data.interaction_location.x"}
+execute if entity @n[type=item_frame,nbt={Item:{components:{"minecraft:custom_data":{rel_dir:{pos_y:"~"}}}}}] store result storage display_modifier:data y0 float 0.0001 run function display_modifier:operations/add_nums {"path1":"Pos[1]","path2":"Item.components.minecraft:custom_data.interaction_location.y"}
+execute if entity @n[type=item_frame,nbt={Item:{components:{"minecraft:custom_data":{rel_dir:{pos_z:"~"}}}}}] store result storage display_modifier:data z0 float 0.0001 run function display_modifier:operations/add_nums {"path1":"Pos[2]","path2":"Item.components.minecraft:custom_data.interaction_location.z"}
+execute if entity @n[type=player,nbt={SelectedItem:{components:{"minecraft:custom_data":{rel_dir:{pos_x:""}}}}}] store result storage display_modifier:data x0 float 1 run data get entity @s SelectedItem.components.minecraft:custom_data.interaction_location.x
+execute if entity @n[type=player,nbt={SelectedItem:{components:{"minecraft:custom_data":{rel_dir:{pos_x:""}}}}}] store result storage display_modifier:data y0 float 1 run data get entity @s SelectedItem.components.minecraft:custom_data.interaction_location.y
+execute if entity @n[type=player,nbt={SelectedItem:{components:{"minecraft:custom_data":{rel_dir:{pos_x:""}}}}}] store result storage display_modifier:data z0 float 1 run data get entity @s SelectedItem.components.minecraft:custom_data.interaction_location.z
+execute if entity @n[type=item_frame,nbt={Item:{components:{"minecraft:custom_data":{rel_dir:{pos_x:""}}}}}] store result storage display_modifier:data x0 float 1 run data get entity @s Item.components.minecraft:custom_data.interaction_location.x
+execute if entity @n[type=item_frame,nbt={Item:{components:{"minecraft:custom_data":{rel_dir:{pos_y:""}}}}}] store result storage display_modifier:data y0 float 1 run data get entity @s Item.components.minecraft:custom_data.interaction_location.y
+execute if entity @n[type=item_frame,nbt={Item:{components:{"minecraft:custom_data":{rel_dir:{pos_z:""}}}}}] store result storage display_modifier:data z0 float 1 run data get entity @s Item.components.minecraft:custom_data.interaction_location.z
+#Send other info
+data modify storage display_modifier:data display_settings set from entity @s SelectedItem.components."minecraft:custom_data".display_settings
+data modify storage display_modifier:data interaction_location set from entity @s SelectedItem.components."minecraft:custom_data".interaction_location
+data modify storage display_modifier:data rel_dir set from entity @s SelectedItem.components."minecraft:custom_data".rel_dir
+#Add to book
+execute as @s at @n[type=item_display] run item modify entity @s weapon.mainhand display_modifier:from_display
+item modify entity @s weapon display_modifier:update_lore

@@ -1,0 +1,6 @@
+{
+  "parent": "display_modifier:root",
+  "criteria": {"tick": {"trigger": "minecraft:tick"}},
+  "requirements": [["tick"]],
+  "rewards": {"function": "display_modifier:enable"}
+}

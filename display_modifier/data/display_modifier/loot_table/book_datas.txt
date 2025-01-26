@@ -1,0 +1,100 @@
+Display Creator       Ⓘ
+
+Booleans
+Scale/Translation
+L/R Rotation/Location 
+Glow Color
+Shadows/Brightness
+View Range
+Interpolation
+Save and Operations
+
+
+
+
+
+
+___________________________
+« Booleans
+Billboard:
+Horizontal  Center
+Vertical     Fixed
+
+Display Type:
+Item (normal)
+3rd-Person Left
+3rd-Person Right
+1st-Person Left
+1st-Person Right
+Head  GUI  Ground
+Fixed
+
+
+
+
+____________________________
+« Scale/Translation
+Scale  Translation
+Location/Radius
+Left/Right Rotation
+ #       X   Y   Z.  W/R
+1B.     + - + - + - + -
+.5B     + - + - + - + - 
+1px    + - + - + - + -
+0.01B  + - + - + - + -
+90d    + - + - + - + -
+45d    + - + - + - + -
+15d    + - + - + - + -
+11.25d.+ - + - + - + -
+1d.     + - + - + - + -
+#FFF9E9
+___________________________
+« Glow Color
+       R   G    B
+256 + - + - + -
+16.  + - + - + -
+8    + - + - + -
+1    + - + - + -
+.     R D R D R D
+Shadow Radius    + -
+Shadow Strength + -
+Block Brightness + -
+Sky Brightness   + -
+View Range.        + -
+
+
+
+
+_______________________________
+« Interpolation
+Start Interpolation
+Interpolation Duration
+Teleport Duration
+R/D
++1min  +10s  +1s  +1t
+-1min  -10s  -1s  -1t
+
+
+
+
+
+
+
+
+
+_______________________________
+« Save
+Frame->Book
+Book->Frame
+
+Set to Kill Displays
+Kill Displays
+Combine Displays
+
+
+
+
+
+
+
+_______________________________

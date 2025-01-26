@@ -1,0 +1,99 @@
+{
+  "function": "minecraft:copy_custom_data",
+  "source": {
+    "type": "minecraft:storage",
+	"source": "display_modifier:data"
+  },
+  "ops": [
+    {
+      "source": "display_settings.transformation.scale",
+      "target": "display_settings.transformation.scale",
+      "op": "replace"
+    },
+	{
+      "source": "display_settings.transformation.left_rotation",
+      "target": "display_settings.transformation.left_rotation",
+      "op": "replace"
+    },
+	{
+      "source": "display_settings.transformation.right_rotation",
+      "target": "display_settings.transformation.right_rotation",
+      "op": "replace"
+    },
+	{
+      "source": "display_settings.transformation.translation",
+      "target": "display_settings.transformation.translation",
+      "op": "replace"
+    },
+	{
+      "source": "display_settings.glow_color",
+      "target": "display_settings.glow_color",
+      "op": "replace"
+    },
+	{
+      "source": "display_settings.shadow_radius",
+      "target": "display_settings.shadow_radius",
+      "op": "replace"
+    },
+	{
+      "source": "display_settings.shadow_strength",
+      "target": "display_settings.shadow_strength",
+      "op": "replace"
+    },
+	{
+      "source": "display_settings.brightness.sky",
+      "target": "display_settings.sky_brightness",
+      "op": "replace"
+    },
+	{
+      "source": "display_settings.brightness.block",
+      "target": "display_settings.block_brightness",
+      "op": "replace"
+    },
+	{
+      "source": "display_settings.start_interpolation",
+      "target": "display_settings.interpolation_start",
+      "op": "replace"
+    },
+	{
+      "source": "display_settings.interpolation_duration",
+      "target": "display_settings.interpolation_duration",
+      "op": "replace"
+    },
+	{
+      "source": "display_settings.teleport_duration",
+      "target": "display_settings.teleport_duration",
+      "op": "replace"
+    },
+	{
+      "source": "display_settings.item.id",
+      "target": "display_settings.item.id",
+      "op": "replace"
+    },
+    {
+      "source": "display_settings.item.components",
+      "target": "display_settings.item.components",
+      "op": "replace"
+    },
+    {
+      "source": "interaction_location.x",
+      "target": "interaction_location.x",
+      "op": "replace"
+    },
+    {
+      "source": "interaction_location.y",
+      "target": "interaction_location.y",
+      "op": "replace"
+    },
+    {
+      "source": "interaction_location.z",
+      "target": "interaction_location.z",
+      "op": "replace"
+    },
+    {
+      "source": "rel_dir",
+      "target": "rel_dir",
+      "op": "replace"
+    }
+  ]
+}

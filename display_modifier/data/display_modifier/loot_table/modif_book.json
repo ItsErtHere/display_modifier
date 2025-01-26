@@ -1,0 +1,532 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:written_book",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"datapack": "Display Modifier",
+									"display_settings":{
+										"transformations":{"translation":[0,0,0],"scale":[1,1,1],
+										"left_rotation":[0,0,0,1],"right_rotation":[0,0,0,1]},
+										"glow_color_override":0,"interpolation_start":0,"interpolation_duration":0,
+										"teleport_duration":0,"shadow_radius":0,"shadow_strength":0,
+										"sky_brightness":15,"block_brightness":15,"billboard":"fixed","display_type":"item"
+									},
+									"interaction_location":{"x":0,"y":0,"z":0},"action":0,
+									"rel_dir":{
+										"pos_x":"~","pos_y":"~","pos_z":"~",
+										"scale_x":"","scale_y":"","scale_z":"",
+										"trans_x":"","trans_y":"","trans_z":"",
+										"l_rot_x":"","l_rot_y":"","l_rot_z":"","l_rot_w":"",
+										"r_rot_x":"","r_rot_y":"","r_rot_z":"","r_rot_w":"",
+										"glow_r":"","glow_g":"","glow_b":"","view_r":"",
+										"shadow_r":"","shadow_s":"","bright_s":"","bright_b":"",
+										"interp_s":"","interp_d":"","telep_d":""
+									}
+								},
+								"minecraft:written_book_content": {
+									"title": "Display Creator",
+									"author": "ItsErtHere"
+								}
+							}
+						},
+						{
+							"function":"minecraft:set_written_book_pages",
+							"mode":"replace_section",
+							"pages": [
+								[
+									{"text":"Display Template v0.0.1","color": "dark_blue"},
+									{"text":"\nTable of Contents","color": "black"},
+									{"text":"\nBooleans","color": "dark_aqua","clickEvent": {"action": "change_page","value": "2"}},
+									{"text":"\nScale/Translation","color": "dark_aqua","clickEvent": {"action": "change_page","value": "3"}},
+									{"text":"\nL/R Rotation/Location","color": "dark_aqua","clickEvent": {"action": "change_page","value": "3"}},
+									{"text":"\nGlow Color","color": "dark_aqua","clickEvent": {"action": "change_page","value": "4"}},
+									{"text":"\nShadows/Brightness","color": "dark_aqua","clickEvent": {"action": "change_page","value": "4"}},
+									{"text":"\nView Range","color": "dark_aqua","clickEvent": {"action": "change_page","value": "4"}},
+									{"text":"\nInterpolation","color": "dark_aqua","clickEvent": {"action": "change_page","value": "5"}},
+									{"text":"\nSave and Operations","color": "dark_green","clickEvent": {"action": "change_page","value": "6"}},
+									{"text":"\nSet Item to Default","color": "dark_green","clickEvent": {"action": "run_command","value": "/function display_modifier:set_frame_data"}}
+								],
+								[
+									{
+										"text": "\u00ab",
+										"color": "light_purple",
+										"clickEvent": {"action": "change_page","value": "1"}
+									},
+									{
+										"text": "  Booleans",
+										"color": "black"
+									},
+									{
+										"text": "\nBillboards:",
+										"color": "black"
+									},
+									{
+										"text":"\nHorizontal",
+										"color": "black",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:change_value_looking_at {data:\"billboard\",value:\"horizontal\"}"}
+									},
+									{
+										"text":"  ",
+										"color": "black"
+									},
+									{
+										"text":"Center",
+										"color": "black",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:change_value_looking_at {\"data\":\"billboard\",\"value\":\"center\"}"}
+									},
+									{
+										"text":"\nVertical",
+										"color": "black",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:change_value_looking_at {\"data\":\"billboard\",\"value\":\"vertical\"}"}
+									},
+									{
+										"text":"  ",
+										"color": "black"
+									},
+									{
+										"text":"Fixed",
+										"color": "black",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:change_value_looking_at {\"data\":\"billboard\",\"value\":\"fixed\"}"}
+									},
+									{
+										"text":"\n\nDisplay Type",
+										"color": "black"
+									},
+									{
+										"text":"\nItem (normal)",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:change_value_looking_at {\"data\":\"display_type\",\"value\":\"item\"}"}
+									},
+									{
+										"text":"\n1st-Person Left-Hand",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:change_value_looking_at {\"data\":\"display_type\",\"value\":\"firstperson_lefthand\"}"}
+									},
+									{
+										"text":"\n1st-Person Right Hand",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:change_value_looking_at {\"data\":\"display_type\",\"value\":\"firstperson_righthand\"}"}
+									},
+									{
+										"text":"\n3rd-Person Left-Hand",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:change_value_looking_at {\"data\":\"display_type\",\"value\":\"thirdperson_lefthand\"}"}
+									},
+									{
+										"text":"\n3rd-Person Right Hand",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:change_value_looking_at {\"data\":\"display_type\",\"value\":\"thirdperson_righthand\"}"}
+									},
+									{
+										"text":"\nHead",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:change_value_looking_at {\"data\":\"display_type\",\"value\":\"head\"}"}
+									},
+									{
+										"text":"  ",
+										"color": "black"
+									},
+									{
+										"text":"GUI",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:change_value_looking_at {\"data\":\"display_type\",\"value\":\"gui\"}"}
+									},
+									{"text":"  ","color": "black"},
+									{
+										"text":"Ground",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:change_value_looking_at {\"data\":\"display_type\",\"value\":\"ground\"}"}
+									},
+									{"text":"  ","color": "black"},
+									{
+										"text":"\nFixed",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:change_value_looking_at {\"data\":\"display_type\",\"value\":\"fixed\"}"}
+									}
+								],
+								[
+									{
+										"text": "\u00ab",
+										"color": "light_purple",
+										"clickEvent": {"action": "change_page","value": "1"}
+									},
+									{
+										"text": " Scale/Translation",
+										"color": "black"
+									},
+									{
+										"text":"\nScale",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/scoreboard players set @p display_setting_type 0"}
+									},
+									{"text":"  ","color": "#FFF9E9"},
+									{
+										"text":"Translation",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/scoreboard players set @p display_setting_type 1"}
+									},
+									{
+										"text":"\nLocation/Radius",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/scoreboard players set @p display_setting_type 7"}
+									},
+									{
+										"text":"\nLeft Rotation",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/scoreboard players set @p display_setting_type 2"}
+									},
+									{
+										"text":"\nRight Rotation",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/scoreboard players set @p display_setting_type 3"}
+									},
+
+									{"text":"\n #       ","color": "dark_aqua"},
+									{"text":"X   ","color": "dark_red"},
+									{"text":"Y    ","color": "dark_green"},
+									{"text":"Z. ","color": "blue"},
+									{"text":"W/R","color": "#AAAA00"},
+
+									{"text":"\n1B","color": "dark_aqua"},
+									{"text":"]    ","color": "#FFF9E9"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:1,x:0}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-1,x:0}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:1,x:1}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-1,x:1}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:1,x:2}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-1,x:2}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:1,x:3}"},"color": "dark_green"},
+									{"text":"-","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-1,x:3}"},"color": "dark_red"},
+
+									{"text":"\n1px","color": "dark_aqua"},
+									{"text":"    ","color": "#FFF9E9"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.0625,x:0}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.0625,x:0}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.0625,x:1}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.0625,x:1}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.0625,x:2}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.0625,x:2}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.0625,x:3}"},"color": "dark_green"},
+									{"text":"-","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.0625,x:3}"},"color": "dark_red"},
+
+									{"text":"\n.01B","color": "dark_aqua"},
+									{"text":"+  ","color": "#FFF9E9"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.01,x:0}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.01,x:0}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.01,x:1}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.01,x:1}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.01,x:2}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.01,x:2}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.01,x:3}"},"color": "dark_green"},
+									{"text":"-","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.01,x:3}"},"color": "dark_red"},
+
+									{"text":"\n90\u00b0","color": "dark_aqua"},
+									{"text":"    ","color": "#FFF9E9"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:1.570796,x:0}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-1.570796,x:0}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:1.570796,x:1}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-1.570796,x:1}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:1.570796,x:2}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-1.570796,x:2}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:1.570796,x:3}"},"color": "dark_green"},
+									{"text":"-","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-1.570796,x:3}"},"color": "dark_red"},
+
+									{"text":"\n45\u00b0","color": "dark_aqua"},
+									{"text":"    ","color": "#FFF9E9"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.78539816,x:0}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.78539816,x:0}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.78539816,x:1}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.78539816,x:1}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.78539816,x:2}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.78539816,x:2}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.78539816,x:3}"},"color": "dark_green"},
+									{"text":"-","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.78539816,x:3}"},"color": "dark_red"},
+
+									{"text":"\n15\u00b0","color": "dark_aqua"},
+									{"text":"    ","color": "#FFF9E9"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.26179938,x:0}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.26179938,x:0}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.26179938,x:1}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.26179938,x:1}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.26179938,x:2}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.26179938,x:2}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.26179938,x:3}"},"color": "dark_green"},
+									{"text":"-","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.26179938,x:3}"},"color": "dark_red"},
+
+									{"text":"\n1\u00b0","color": "dark_aqua"},
+									{"text":".     ","color": "#FFF9E9"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.01745329,x:0}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.01745329,x:0}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.01745329,x:1}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.01745329,x:1}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.01745329,x:2}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.01745329,x:2}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:0.01745329,x:3}"},"color": "dark_green"},
+									{"text":"-","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_stl {a:-0.01745329,x:3}"},"color": "dark_red"},
+									
+									{"text":"        .","color": "#FFF9E9"},
+									{"text":"R ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"~\",x:0}"},"color": "dark_green"},
+									{"text":"D ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"\",x:0}"},"color": "dark_red"},
+									{"text":"R ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"~\",x:1}"},"color": "dark_green"},
+									{"text":"D ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"\",x:1}"},"color": "dark_red"},
+									{"text":"R ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"~\",x:2}"},"color": "dark_green"},
+									{"text":"D ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"\",x:2}"},"color": "dark_red"},
+									{"text":"R ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"~\",x:3}"},"color": "dark_green"},
+									{"text":"D","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"\",x:3}"},"color": "dark_red"}
+								],
+								[
+									{
+										"text": "\u00ab",
+										"color": "light_purple",
+										"clickEvent": {"action": "change_page","value": "1"}
+									},
+									{
+										"text": " Glow Color",
+										"color": "black",
+										"clickEvent": {"action": "run_command","value": "/scoreboard players set @s display_setting_type 4"}
+									},
+									{"text": "\n       ","color": "#FFF9E9"},
+									{"text": "R   ","color": "dark_red","hoverEvent": {"action": "show_text","contents": "Change Red Component of the Glow Color"}},
+									{"text": "G    ","color": "dark_green","hoverEvent": {"action": "show_text","contents": "Change Green Component of the Glow Color"}},
+									{"text": "B   ","color": "dark_blue","hoverEvent": {"action": "show_text","contents": "Change Blue Component of the Glow Color"}},
+									{"text": "V","color": "#AAAA00","hoverEvent": {"action": "show_text","contents": "Change View Range"}},
+
+									{"text":"\n255","color": "dark_aqua"},
+									{"text":" ","color": "#FFF9E9"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:255,x:0}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:-255,x:0}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:255,x:1}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:-255,x:1}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:255,x:2}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:-255,x:2}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:256,x:2}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:-256,x:2}"},"color": "dark_red"},
+									
+									{"text":"\n16","color": "dark_aqua"},
+									{"text":".  ","color": "#FFF9E9"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:16,x:0}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:-16,x:0}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:16,x:1}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:-16,x:1}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:16,x:2}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:-16,x:2}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:16,x:3}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:-16,x:3}"},"color": "dark_red"},
+
+									{"text":"\n1","color": "dark_aqua"},
+									{"text":"    ","color": "#FFF9E9"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:1,x:0}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:-1,x:0}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:1,x:1}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:-1,x:1}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:1,x:2}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:-1,x:2}"},"color": "dark_red"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:16,x:3}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_glow {a:-16,x:3}"},"color": "dark_red"},
+
+									{"text":"\n.     ","color": "#FFF9E9"},
+									{"text":"R ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"~\",x:0}"},"color": "dark_green"},
+									{"text":"D ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"\",x:0}"},"color": "dark_red"},
+									{"text":"R ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"~\",x:1}"},"color": "dark_green"},
+									{"text":"D ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"\",x:1}"},"color": "dark_red"},
+									{"text":"R ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"~\",x:2}"},"color": "dark_green"},
+									{"text":"D ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"\",x:2}"},"color": "dark_red"},
+									{"text":"R ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"~\",x:3}"},"color": "dark_green"},
+									{"text":"D ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"\",x:3}"},"color": "dark_red"},
+
+									{"text":"\n\nShadow Radius","color": "dark_aqua"},
+									{"text":"    ","color": "#FFF9E9"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_shadow {a:1,x:0}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_shadow {a:-1,x:0}"},"color": "dark_red"},
+
+									{"text":"\nShadow Strength","color": "dark_aqua"},
+									{"text":" ","color": "#FFF9E9"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_shadow {a:1,x:1}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_shadow {a:-1,x:1}"},"color": "dark_red"},
+
+									{"text":"\nSky Brightness","color": "dark_aqua"},
+									{"text":"]  ","color": "#FFF9E9"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_shadow {a:1,x:2}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_shadow {a:-1,x:2}"},"color": "dark_red"},
+
+									{"text":"\nBlock Brightness","color": "dark_aqua"},
+									{"text":" ","color": "#FFF9E9"},
+									{"text":"+ ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_shadow {a:1,x:3}"},"color": "dark_green"},
+									{"text":"- ","clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_shadow {a:-1,x:3}"},"color": "dark_red"}
+								],
+								[
+									{
+										"text": "\u00ab",
+										"color": "light_purple",
+										"clickEvent": {"action": "change_page","value": "1"}
+									},
+									{
+										"text": " Interpolation    ",
+										"color": "black"
+									},
+									{
+										"text": "R ",
+										"color": "dark_red",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"~\"}"}
+									},
+									{
+										"text": "D",
+										"color": "dark_green",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/rel_dir {a:\"\"}"}
+									},
+									{
+										"text": "\nInterpolation Start","color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:set_scores {x:0,t:6}"}
+									},
+									{
+										"text": "\nInterpolation Duration","color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:set_scores {x:1,t:6}"}
+									},
+									{
+										"text": "\nTeleport Duration","color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:set_scores {x:2,t:6}"}
+									},
+									{
+										"text": "\n\n+1min","color": "dark_green",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_interp {a:600}"}
+									},
+									{
+										"text": " +10s","color": "dark_green",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_interp {a:100}"}
+									},
+									{
+										"text": " +1s","color": "dark_green",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_interp {a:10}"}
+									},
+									{
+										"text": " +1t","color": "dark_green",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_interp {a:1}"}
+									},
+									{
+										"text": "\n-1min","color": "dark_red",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_interp {a:-600}"}
+									},
+									{
+										"text": " -10s","color": "dark_red",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_interp {a:-100}"}
+									},
+									{
+										"text": " -1s","color": "dark_red",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_interp {a:-10}"}
+									},
+									{
+										"text": " -1t","color": "dark_red",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:append_info/append_interp {a:-1}"}
+									}
+								],
+								[
+									{
+										"text": "\u00ab",
+										"color": "light_purple",
+										"clickEvent": {"action": "change_page","value": "1"}
+									},
+									{
+										"text": " Save, Kill, Combine",
+										"color": "black",
+										"clickEvent": {"action": "change_page","value": "1"}
+									},
+									{
+										"text": "\nFrame->Book",
+										"color": "dark_aqua"
+									},
+									{
+										"text": "`      ",
+										"color": "#FFF9E9"
+									},
+									{
+										"text": "S ",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:set_action {a:1}"}
+									},
+									{
+										"text": "A",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:modify_item_data/update_lore"}
+									},
+									{
+										"text": "\nBook->Frame",
+										"color": "dark_aqua"
+									},
+									{
+										"text": "`      ",
+										"color": "#FFF9E9"
+									},
+									{
+										"text": "S ",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:set_action {a:2}"}
+									},
+									{
+										"text": "A",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:modify_item_data/upload_lore"}
+									},
+									{
+										"text": "\nKill Displays        ",
+										"color": "dark_aqua"
+									},
+									{
+										"text": "S ",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:set_action {a:3}"}
+									},
+									{
+										"text": "A",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:kill_displs"}
+									},
+									{
+										"text": "\nCombine Displays  ",
+										"color": "dark_aqua"
+									},
+									{
+										"text": "S ",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:set_action {a:4}"}
+									},
+									{
+										"text": "A",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:create_interactions"}
+									},
+									{
+										"text": "\nSet Item Data",
+										"color": "dark_aqua"
+									},
+									{
+										"text": "`.     ",
+										"color": "#FFF9E9"
+									},
+									{
+										"text": "S ",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:set_action {a:5}"}
+									},
+									{
+										"text": "A",
+										"color": "dark_aqua",
+										"clickEvent": {"action": "run_command","value": "/function display_modifier:set_item_data"}
+									}
+								]
+
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

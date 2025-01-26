@@ -1,0 +1,1 @@
+execute as @s run summon item_display ~ ~ ~ {item:{id:"grass_block"}}

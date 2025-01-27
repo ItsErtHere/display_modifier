@@ -1,1 +1,2 @@
 $data modify entity @n[type=item_frame] Item.components."minecraft:custom_data".display_settings.$(data) set value $(value)
+item modify entity @n[type=item_frame] container.0 display_modifier:update_lore_frame

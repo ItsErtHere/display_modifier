@@ -1,0 +1,306 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    {
+      "translate": "Translation: %s%s, %s%s, %s%s",
+      "with": [
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.trans_x",
+          "entity": "@n[type=item_frame]","color": "red"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.transformations.translation[0]",
+          "entity": "@n[type=item_frame]","color": "red"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.trans_y",
+          "entity": "@n[type=item_frame]","color": "green"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.transformations.translation[1]",
+          "entity": "@n[type=item_frame]","color": "green"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.trans_z",
+          "entity": "@n[type=item_frame]","color": "blue"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.transformations.translation[2]",
+          "entity": "@n[type=item_frame]","color": "blue"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+      "translate": "Scale: %s%s, %s%s, %s%s",
+      "with": [
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.scale_x",
+          "entity": "@n[type=item_frame]","color": "red"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.transformations.scale[0]",
+          "entity": "@n[type=item_frame]","color": "red"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.scale_y",
+          "entity": "@n[type=item_frame]","color": "green"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.transformations.scale[1]",
+          "entity": "@n[type=item_frame]","color": "green"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.scale_z",
+          "entity": "@n[type=item_frame]","color": "blue"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.transformations.scale[2]",
+          "entity": "@n[type=item_frame]","color": "blue"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+      "translate": "Left Rotation: %s%s, %s%s, %s%s, %s%s",
+      "with": [
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.l_rot_x",
+          "entity": "@n[type=item_frame]","color": "red"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.transformations.left_rotation[0]",
+          "entity": "@n[type=item_frame]","color": "red"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.l_rot_y",
+          "entity": "@n[type=item_frame]","color": "green"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.transformations.left_rotation[1]",
+          "entity": "@n[type=item_frame]","color": "green"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.l_rot_z",
+          "entity": "@n[type=item_frame]","color": "blue"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.transformations.left_rotation[2]",
+          "entity": "@n[type=item_frame]","color": "blue"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.l_rot_w",
+          "entity": "@n[type=item_frame]","color": "yellow"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.transformations.left_rotation[3]",
+          "entity": "@n[type=item_frame]","color": "yellow"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+      "translate": "Right Rotation: %s%s, %s%s, %s%s, %s%s",
+      "with": [
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.r_rot_x",
+          "entity": "@n[type=item_frame]","color": "red"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.transformations.right_rotation[0]",
+          "entity": "@n[type=item_frame]","color": "red"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.r_rot_y",
+          "entity": "@n[type=item_frame]","color": "green"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.transformations.right_rotation[1]",
+          "entity": "@n[type=item_frame]","color": "green"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.r_rot_z",
+          "entity": "@n[type=item_frame]","color": "blue"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.transformations.right_rotation[2]",
+          "entity": "@n[type=item_frame]","color": "blue"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.r_rot_w",
+          "entity": "@n[type=item_frame]","color": "yellow"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.transformations.right_rotation[3]",
+          "entity": "@n[type=item_frame]","color": "yellow"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+      "translate": "Glow Color: %s%s, %s%s, %s%s, %s%s",
+      "with": [
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.glow_r",
+          "entity": "@n[type=item_frame]","color": "red"
+        },
+        {
+          "type": "score","color":"red",
+          "score": {"name": "@s","objective": "display_glow_red"}
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.glow_g",
+          "entity": "@n[type=item_frame]","color": "green"
+        },
+        {
+          "type": "score","color":"green",
+          "score": {"name": "@s","objective": "display_glow_green"}
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.glow_b",
+          "entity": "@n[type=item_frame]","color": "blue"
+        },
+        {
+          "type": "score","color":"blue",
+          "score": {"name": "@s","objective": "display_glow_blue"}
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.view_r",
+          "entity": "@n[type=item_frame]","color": "yellow"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.view_range",
+          "entity": "@n[type=item_frame]","color": "yellow"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+      "translate": "Shadows: %s%s, %s%s, %s%s, %s%s",
+      "with": [
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.shadow_r",
+          "entity": "@n[type=item_frame]","color": "red"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.shadow_radius",
+          "entity": "@n[type=item_frame]","color": "red"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.shadow_s",
+          "entity": "@n[type=item_frame]","color": "green"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.shadow_strength",
+          "entity": "@n[type=item_frame]","color": "green"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.bright_s",
+          "entity": "@n[type=item_frame]","color": "blue"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.brightness.sky",
+          "entity": "@n[type=item_frame]","color": "blue"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.bright_b",
+          "entity": "@n[type=item_frame]","color": "yellow"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.brightness.block",
+          "entity": "@n[type=item_frame]","color": "yellow"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+      "translate": "Interpolation: %s%s, %s%s, %s%s",
+      "with": [
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.interp_s",
+          "entity": "@n[type=item_frame]","color": "red"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.start_interpolation",
+          "entity": "@n[type=item_frame]","color": "red"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.interp_d",
+          "entity": "@n[type=item_frame]","color": "green"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.interpolation_duration",
+          "entity": "@n[type=item_frame]","color": "green"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.telep_d",
+          "entity": "@n[type=item_frame]","color": "blue"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.teleport_duration",
+          "entity": "@n[type=item_frame]","color": "blue"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+      "translate": "Location: %s%s, %s%s, %s%s, %s",
+      "with": [
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.pos_x",
+          "entity": "@n[type=item_frame]","color": "red"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.interaction_location.x",
+          "entity": "@n[type=item_frame]","color": "red"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.pos_y",
+          "entity": "@n[type=item_frame]","color": "green"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.interaction_location.y",
+          "entity": "@n[type=item_frame]","color": "green"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.rel_dir.pos_z",
+          "entity": "@n[type=item_frame]","color": "blue"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.interaction_location.z",
+          "entity": "@n[type=item_frame]","color": "blue"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.interaction_location.r",
+          "entity": "@n[type=item_frame]","color": "yellow"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+    "translate": "Billboard/Item Type: %s, %s",
+      "with": [
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.billboard",
+          "entity": "@n[type=item_frame]","color": "#AAAA00"
+        },
+        {
+          "nbt": "Item.components.minecraft:custom_data.display_settings.display_type",
+          "entity": "@n[type=item_frame]","color": "#AAAA00"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    }
+  ],
+  "mode": "replace_all"
+}

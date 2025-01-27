@@ -1,0 +1,11 @@
+{
+	"function": "minecraft:copy_custom_data",
+	"source": {"type": "storage","source": "display_modifier:data"},
+	"ops": [
+		{
+			"op": "replace",
+			"source": "action",
+			"target": "action"
+		}
+	]
+}

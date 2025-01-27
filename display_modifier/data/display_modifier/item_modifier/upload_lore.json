@@ -1,5 +1,5 @@
 {
 	"function": "copy_components",
 	"source": "block_entity",
-	"include": ["custom_data","lore"]
+	"include": ["custom_data"]
 }

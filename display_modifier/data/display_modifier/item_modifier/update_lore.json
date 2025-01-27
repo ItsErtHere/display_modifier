@@ -3,331 +3,310 @@
   "entity": "this",
   "lore": [
     {
-      "translate": "Translation: %s %s, %s %s, %s %s",
+      "translate": "Translation: %s%s, %s%s, %s%s",
       "with": [
         {
-          "nbt": "rel_dir.trans_x",
-          "storage": "display_modifier:data",
-          "color": "red"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.trans_x",
+          "entity": "@p","color": "red"
         },
         {
-          "nbt": "transformation.translation[0]",
-          "storage": "display_modifier:data",
-          "color": "red"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.transformations.translation[0]",
+          "entity": "@p","color": "red"
         },
         {
-          "nbt": "rel_dir.trans_y",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.trans_y",
+          "entity": "@p","color": "green"
         },
         {
-          "nbt": "transformation.translation[1]",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.transformations.translation[1]",
+          "entity": "@p","color": "green"
         },
         {
-          "nbt": "rel_dir.trans_z",
-          "storage": "display_modifier:data",
-          "color": "blue"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.trans_z",
+          "entity": "@p","color": "blue"
         },
         {
-          "nbt": "transformation.translation[2]",
-          "storage": "display_modifier:data",
-          "color": "blue"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.transformations.translation[2]",
+          "entity": "@p","color": "blue"
         }
       ],
       "color": "aqua",
       "italic": false
     },
     {
-      "translate": "Scale: %s %s, %s %s, %s %s",
+      "translate": "Scale: %s%s, %s%s, %s%s",
       "with": [
         {
-          "nbt": "rel_dir.scale_x",
-          "storage": "display_modifier:data",
-          "color": "red"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.scale_x",
+          "entity": "@p","color": "red"
         },
         {
-          "nbt": "transformation.scale[0]",
-          "storage": "display_modifier:data",
-          "color": "red"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.transformations.scale[0]",
+          "entity": "@p","color": "red"
         },
         {
-          "nbt": "rel_dir.scale_y",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.scale_y",
+          "entity": "@p","color": "green"
         },
         {
-          "nbt": "transformation.scale[1]",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.transformations.scale[1]",
+          "entity": "@p","color": "green"
         },
         {
-          "nbt": "rel_dir.scale_z",
-          "storage": "display_modifier:data",
-          "color": "blue"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.scale_z",
+          "entity": "@p","color": "blue"
         },
         {
-          "nbt": "transformation.scale[2]",
-          "storage": "display_modifier:data",
-          "color": "blue"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.transformations.scale[2]",
+          "entity": "@p","color": "blue"
         }
       ],
       "color": "aqua",
       "italic": false
     },
     {
-      "translate": "Left Rotation: %s %s, %s %s, %s %s, %s %s",
+      "translate": "Left Rotation: %s%s, %s%s, %s%s, %s%s",
       "with": [
         {
-          "nbt": "rel_dir.l_rot_x",
-          "storage": "display_modifier:data",
-          "color": "red"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.l_rot_x",
+          "entity": "@p","color": "red"
         },
         {
-          "nbt": "transformation.left_rotation[0]",
-          "storage": "display_modifier:data",
-          "color": "red"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.transformations.left_rotation[0]",
+          "entity": "@p","color": "red"
         },
         {
-          "nbt": "rel_dir.l_rot_y",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.l_rot_y",
+          "entity": "@p","color": "green"
         },
         {
-          "nbt": "transformation.left_rotation[1]",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.transformations.left_rotation[1]",
+          "entity": "@p","color": "green"
         },
         {
-          "nbt": "rel_dir.l_rot_z",
-          "storage": "display_modifier:data",
-          "color": "blue"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.l_rot_z",
+          "entity": "@p","color": "blue"
         },
         {
-          "nbt": "transformation.left_rotation[2]",
-          "storage": "display_modifier:data",
-          "color": "blue"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.transformations.left_rotation[2]",
+          "entity": "@p","color": "blue"
         },
         {
-          "nbt": "rel_dir.l_rot_w",
-          "storage": "display_modifier:data",
-          "color": "yellow"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.l_rot_w",
+          "entity": "@p","color": "yellow"
         },
         {
-          "nbt": "transformation.left_rotation[3]",
-          "storage": "display_modifier:data",
-          "color": "yellow"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.transformations.left_rotation[3]",
+          "entity": "@p","color": "yellow"
         }
       ],
       "color": "aqua",
       "italic": false
     },
     {
-      "translate": "Right Rotation: %s %s, %s %s, %s %s, %s %s",
+      "translate": "Right Rotation: %s%s, %s%s, %s%s, %s%s",
       "with": [
         {
-          "nbt": "rel_dir.r_rot_x",
-          "storage": "display_modifier:data",
-          "color": "red"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.r_rot_x",
+          "entity": "@p","color": "red"
         },
         {
-          "nbt": "transformation.right_rotation[0]",
-          "storage": "display_modifier:data",
-          "color": "red"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.transformations.right_rotation[0]",
+          "entity": "@p","color": "red"
         },
         {
-          "nbt": "rel_dir.r_rot_y",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.r_rot_y",
+          "entity": "@p","color": "green"
         },
         {
-          "nbt": "transformation.right_rotation[1]",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.transformations.right_rotation[1]",
+          "entity": "@p","color": "green"
         },
         {
-          "nbt": "rel_dir.r_rot_z",
-          "storage": "display_modifier:data",
-          "color": "blue"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.r_rot_z",
+          "entity": "@p","color": "blue"
         },
         {
-          "nbt": "transformation.right_rotation[2]",
-          "storage": "display_modifier:data",
-          "color": "blue"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.transformations.right_rotation[2]",
+          "entity": "@p","color": "blue"
         },
         {
-          "nbt": "rel_dir.r_rot_w",
-          "storage": "display_modifier:data",
-          "color": "yellow"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.r_rot_w",
+          "entity": "@p","color": "yellow"
         },
         {
-          "nbt": "transformation.right_rotation[3]",
-          "storage": "display_modifier:data",
-          "color": "yellow"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.transformations.right_rotation[3]",
+          "entity": "@p","color": "yellow"
         }
       ],
       "color": "aqua",
       "italic": false
     },
     {
-      "translate": "Glow Color: %s %s, %s %s, %s %s",
+      "translate": "Glow Color: %s%s, %s%s, %s%s",
       "with": [
         {
-          "nbt": "rel_dir.glow_r",
-          "storage": "display_modifier:data",
-          "color": "red"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.glow_r",
+          "entity": "@s","color": "red"
         },
         {
-          "nbt": "glow_color[0]",
-          "storage": "display_modifier:data",
-          "color": "red"
+          "type": "score","color":"red",
+          "score": {"name": "@s","objective": "display_glow_red"}
         },
         {
-          "nbt": "rel_dir.glow_g",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.glow_g",
+          "entity": "@s","color": "green"
         },
         {
-          "nbt": "glow_color[1]",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "type": "score","color":"green",
+          "score": {"name": "@s","objective": "display_glow_green"}
         },
         {
-          "nbt": "rel_dir.glow_b",
-          "storage": "display_modifier:data",
-          "color": "blue"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.glow_b",
+          "entity": "@s","color": "blue"
         },
         {
-          "nbt": "glow_color[2]",
-          "storage": "display_modifier:data",
-          "color": "blue"
+          "type": "score","color":"blue",
+          "score": {"name": "@s","objective": "display_glow_blue"}
+        },
+        {
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.view_r",
+          "entity": "@s","color": "yellow"
+        },
+        {
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.view_range",
+          "entity": "@s","color": "yellow"
         }
       ],
       "color": "aqua",
       "italic": false
     },
     {
-      "translate": "Shadows: %s %s, %s %s, %s %s, %s %s",
+      "translate": "Shadows: %s%s, %s%s, %s%s, %s%s",
       "with": [
         {
-          "nbt": "rel_dir.shadow_r",
-          "storage": "display_modifier:data",
-          "color": "red"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.shadow_r",
+          "entity": "@p","color": "red"
         },
         {
-          "nbt": "shadow_radius",
-          "storage": "display_modifier:data",
-          "color": "red"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.shadow_radius",
+          "entity": "@p","color": "red"
         },
         {
-          "nbt": "rel_dir.shadow_s",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.shadow_s",
+          "entity": "@p","color": "green"
         },
         {
-          "nbt": "shadow_strength",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.shadow_strength",
+          "entity": "@p","color": "green"
         },
         {
-          "nbt": "rel_dir.bright_b",
-          "storage": "display_modifier:data",
-          "color": "blue"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.bright_s",
+          "entity": "@p","color": "dark_aqua"
         },
         {
-          "nbt": "block_brightness",
-          "storage": "display_modifier:data",
-          "color": "blue"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.brightness.sky",
+          "entity": "@p","color": "dark_aqua"
         },
         {
-          "nbt": "rel_dir.bright_s",
-          "storage": "display_modifier:data",
-          "color": "yellow"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.bright_b",
+          "entity": "@p","color": "yellow"
         },
         {
-          "nbt": "sky_brightness",
-          "storage": "display_modifier:data",
-          "color": "yellow"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.brightness.block",
+          "entity": "@p","color": "yellow"
         }
       ],
       "color": "aqua",
       "italic": false
     },
     {
-      "translate": "Interpolation: %s %s, %s %s, %s %s",
+      "translate": "Interpolation: %s%s, %s%s, %s%s",
       "with": [
         {
-          "nbt": "rel_dir.interp_s",
-          "storage": "display_modifier:data",
-          "color": "red"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.interp_s",
+          "entity": "@p","color": "red"
         },
         {
-          "nbt": "interpolation_start",
-          "storage": "display_modifier:data",
-          "color": "red"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.start_interpolation",
+          "entity": "@p","color": "red"
         },
         {
-          "nbt": "rel_dir.interp_d",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.interp_d",
+          "entity": "@p","color": "green"
         },
         {
-          "nbt": "interpolation_duration",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.interpolation_duration",
+          "entity": "@p","color": "green"
         },
         {
-          "nbt": "rel_dir.telep_d",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.telep_d",
+          "entity": "@p","color": "blue"
         },
         {
-          "nbt": "teleport_duration",
-          "storage": "display_modifier:data",
-          "color": "blue"
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.teleport_duration",
+          "entity": "@p","color": "blue"
         }
       ],
       "color": "aqua",
       "italic": false
     },
     {
-      "translate": "Location: %s %s, %s %s, %s %s, %s %s",
+      "translate": "Location: %s%s, %s%s, %s%s, %s",
       "with": [
         {
-          "nbt": "rel_dir.pos_x",
-          "storage": "display_modifier:data",
-          "color": "red"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.pos_x",
+          "entity": "@p","color": "red"
         },
         {
-          "nbt": "interaction_location.x",
-          "storage": "display_modifier:data",
-          "color": "red"
+          "nbt": "SelectedItem.components.minecraft:custom_data.interaction_location.x",
+          "entity": "@p","color": "red"
         },
         {
-          "nbt": "rel_dir.pos_y",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.pos_y",
+          "entity": "@p","color": "green"
         },
         {
-          "nbt": "interaction_location.y",
-          "storage": "display_modifier:data",
-          "color": "green"
+          "nbt": "SelectedItem.components.minecraft:custom_data.interaction_location.y",
+          "entity": "@p","color": "green"
         },
         {
-          "nbt": "rel_dir.pos_z",
-          "storage": "display_modifier:data",
-          "color": "blue"
+          "nbt": "SelectedItem.components.minecraft:custom_data.rel_dir.pos_z",
+          "entity": "@p","color": "blue"
         },
         {
-          "nbt": "interaction_location.z",
-          "storage": "display_modifier:data",
-          "color": "blue"
+          "nbt": "SelectedItem.components.minecraft:custom_data.interaction_location.z",
+          "entity": "@p","color": "blue"
         },
         {
-          "nbt": "interaction_location.r",
-          "storage": "display_modifier:data",
-          "color": "yellow"
+          "nbt": "SelectedItem.components.minecraft:custom_data.interaction_location.r",
+          "entity": "@p","color": "yellow"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+    "translate": "Billboard/Item Type: %s, %s",
+      "with": [
+        {
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.billboard",
+          "entity": "@p","color": "#AAAA00"
+        },
+        {
+          "nbt": "SelectedItem.components.minecraft:custom_data.display_settings.display_type",
+          "entity": "@p","color": "#AAAA00"
+        }
+      ],
+      "color": "aqua",
+      "italic": false
+    },
+    {
+    "translate": "Action: %s",
+      "with": [
+        {
+          "nbt": "SelectedItem.components.minecraft:custom_data.action",
+          "entity": "@p","color": "#AAAA00"
         }
       ],
       "color": "aqua",

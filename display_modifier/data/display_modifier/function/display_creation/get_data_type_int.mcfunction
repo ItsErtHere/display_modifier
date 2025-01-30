@@ -1,0 +1,8 @@
+execute as @s[type=player] store result storage display_modifier:data info.$(varname) int 1 run data get entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".display_settings.$(path) 1
+execute as @s[type=item_frame] store result storage display_modifier:data info.$(varname) int 1 run data get entity @s Item.components."minecraft:custom_data".display_settings.$(path) 1
+$data modify storage display_modifier:data info.path set value $(path)
+$data modify storage display_modifier:data info.varname set value $(varname)
+execute if entity @s[type=item_frame] unless items entity @s container.0 *[custom_data~{display_settings:{"display_type":"block"}}] run function display_modifier:display_creation/add_data_type with storage display_modifier:data info
+execute if entity @s[type=player] unless items entity @s weapon.offhand *[custom_data~{display_settings:{"display_type":"block"}}] run function display_modifier:display_creation/add_data_type_player with storage display_modifier:data info
+execute if entity @s[type=item_frame] if items entity @s container.0 *[custom_data~{display_settings:{"display_type":"block"}}] run function display_modifier:display_creation/add_data_type_block with storage display_modifier:data info
+execute if entity @s[type=player] if items entity @s weapon.offhand *[custom_data~{display_settings:{"display_type":"block"}}] run function display_modifier:display_creation/add_data_type_player_block with storage display_modifier:data info
